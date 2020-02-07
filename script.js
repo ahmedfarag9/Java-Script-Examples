@@ -11,3 +11,9 @@ ul = document.getElementById('todo_list');
 let itemCountSpan = parseInt(document.getElementById('item-count').textContent);
 let uncheckedCountSpan = parseInt(document.getElementById('unchecked-count').textContent);
 
+function newTodo() {
+
+	itemCountSpan = itemCountSpan + 1;
+	uncheckedCountSpan = uncheckedCountSpan + 1;
+
+};
