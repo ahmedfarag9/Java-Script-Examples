@@ -15,5 +15,8 @@ function newTodo() {
 
 	itemCountSpan = itemCountSpan + 1;
 	uncheckedCountSpan = uncheckedCountSpan + 1;
+	document.getElementById('item-count').textContent = itemCountSpan;
+	document.getElementById('unchecked-count').textContent = uncheckedCountSpan;
+
 
 };
