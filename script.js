@@ -25,4 +25,11 @@ function newTodo() {
 		document.getElementById('item-count').textContent = itemCountSpan;
 		document.getElementById('unchecked-count').textContent = uncheckedCountSpan;
 	
+		todo_list.push(	{
+			TODO_ITEM: parseInt(itemCountSpan),
+			TODO_CHECKBOX: 'unchecked',
+			TODO_TEXT: document.getElementById('todo-text').value,
+			});
+
+	}
 };
