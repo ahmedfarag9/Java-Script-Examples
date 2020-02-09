@@ -10,13 +10,17 @@ ul = document.getElementById('todo_list');
 //let list = document.getElementById('todo-list').textContent;
 let itemCountSpan = parseInt(document.getElementById('item-count').textContent);
 let uncheckedCountSpan = parseInt(document.getElementById('unchecked-count').textContent);
+let delete_flag = "no";
+let check_flag = "no";
+let uncheck_flag = "no";
+
+
 
 function newTodo() {
 
-	itemCountSpan = itemCountSpan + 1;
-	uncheckedCountSpan = uncheckedCountSpan + 1;
-	document.getElementById('item-count').textContent = itemCountSpan;
-	document.getElementById('unchecked-count').textContent = uncheckedCountSpan;
-
-
+		itemCountSpan = itemCountSpan + 1;
+		uncheckedCountSpan = uncheckedCountSpan + 1;
+		document.getElementById('item-count').textContent = itemCountSpan;
+		document.getElementById('unchecked-count').textContent = uncheckedCountSpan;
+	
 };
