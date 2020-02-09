@@ -47,4 +47,11 @@ function newTodo() {
 	else {
 		document.getElementById('item-count').textContent = itemCountSpan;
 		document.getElementById('unchecked-count').textContent = uncheckedCountSpan;
+
+		//Reset flag variables
+		delete_flag = "no";
+		check_flag = "no";
+		uncheck_flag = "no";
+	}
+	
 };
