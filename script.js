@@ -61,5 +61,9 @@ function newTodo() {
 	todo_list.forEach(function (item) {
 		let li = document.createElement('li');
 		ul.appendChild(li);
+		//add list elements attributes	
+		li.innerHTML += ( parseInt(todo_list.indexOf(item)) + 1 )  + "-     " + item.TODO_TEXT  + ",   " + item.TODO_CHECKBOX + "   " ;
+		li.className = classNames.TODO_TEXT;
+
 	});
 };
