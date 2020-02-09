@@ -18,6 +18,8 @@ let uncheck_flag = "no";
 
 function newTodo() {
 
+	if (delete_flag === "no" && check_flag === "no" && uncheck_flag === "no" ) {
+
 		itemCountSpan = itemCountSpan + 1;
 		uncheckedCountSpan = uncheckedCountSpan + 1;
 		document.getElementById('item-count').textContent = itemCountSpan;
