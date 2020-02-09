@@ -54,4 +54,12 @@ function newTodo() {
 		uncheck_flag = "no";
 	}
 	
+	//Editing the TODO list in the HTML DOM
+	ul.innerHTML = '';
+
+	//For each item in the array create a html list element 
+	todo_list.forEach(function (item) {
+		let li = document.createElement('li');
+		ul.appendChild(li);
+	});
 };
