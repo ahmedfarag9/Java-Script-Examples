@@ -32,4 +32,8 @@ function newTodo() {
 			});
 
 	}
+
+	else {
+		document.getElementById('item-count').textContent = itemCountSpan;
+		document.getElementById('unchecked-count').textContent = uncheckedCountSpan;
 };
