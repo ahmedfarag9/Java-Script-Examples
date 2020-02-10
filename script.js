@@ -65,5 +65,8 @@ function newTodo() {
 		li.innerHTML += ( parseInt(todo_list.indexOf(item)) + 1 )  + "-     " + item.TODO_TEXT  + ",   " + item.TODO_CHECKBOX + "   " ;
 		li.className = classNames.TODO_TEXT;
 
+		//Add a delete button
+		let delete_button = document.createElement('BUTTON');
+		li.appendChild(delete_button);
 	});
 };
