@@ -68,5 +68,9 @@ function newTodo() {
 		//Add a delete button
 		let delete_button = document.createElement('BUTTON');
 		li.appendChild(delete_button);
+		delete_button.innerText = "delete";
+		delete_button.className = classNames.TODO_DELETE;
+		delete_button.id = parseInt(item.TODO_ITEM);
+
 	});
 };
