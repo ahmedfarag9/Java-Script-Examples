@@ -75,5 +75,9 @@ function newTodo() {
 		//Add a check/uncheck button
 		let check_button = document.createElement('BUTTON');
 		li.appendChild(check_button);
+		check_button.innerText = "check/uncheck";
+		check_button.className = classNames.TODO_CHECKBOX;
+		check_button.id = parseInt(item.TODO_ITEM);
+		
 	});
 };
