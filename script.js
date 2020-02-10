@@ -72,5 +72,8 @@ function newTodo() {
 		delete_button.className = classNames.TODO_DELETE;
 		delete_button.id = parseInt(item.TODO_ITEM);
 
+		//Add a check/uncheck button
+		let check_button = document.createElement('BUTTON');
+		li.appendChild(check_button);
 	});
 };
