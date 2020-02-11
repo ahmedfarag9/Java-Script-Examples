@@ -82,6 +82,11 @@ function newTodo() {
 		//IF delete button is clicked
 		delete_button.onclick = function deleteItem() {
 
-		};
+			//Get delete button id			
+			delete_item_id = parseInt(delete_button.id)
+
+			//Find deleted item and delete it form TODO array
+			for( var i = 0; i < todo_list.length; i++){ 
+				if ( todo_list[i].TODO_ITEM === delete_item_id ) {
 	});
 };
