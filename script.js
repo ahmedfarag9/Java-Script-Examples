@@ -91,6 +91,10 @@ function newTodo() {
 					itemCountSpan = itemCountSpan - 1;
 					delete_flag = "yes";
 
-		};
+					//Check wether to edit check/uncheck counter or not
+					if ( todo_list[i].TODO_CHECKBOX === 'unchecked' ) {
+						uncheckedCountSpan = uncheckedCountSpan - 1;
+					}
+
 	});
 };
