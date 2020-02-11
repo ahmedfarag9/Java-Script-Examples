@@ -88,5 +88,9 @@ function newTodo() {
 			//Find deleted item and delete it form TODO array
 			for( var i = 0; i < todo_list.length; i++){ 
 				if ( todo_list[i].TODO_ITEM === delete_item_id ) {
+					itemCountSpan = itemCountSpan - 1;
+					delete_flag = "yes";
+
+		};
 	});
 };
