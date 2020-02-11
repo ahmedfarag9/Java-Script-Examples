@@ -96,5 +96,13 @@ function newTodo() {
 						uncheckedCountSpan = uncheckedCountSpan - 1;
 					}
 
+					//delete the item and re-run the add function to refresh the list values on webpage
+					todo_list.splice(i , 1);
+					newTodo();
+				}
+			}
+		};
+
+		};
 	});
 };
