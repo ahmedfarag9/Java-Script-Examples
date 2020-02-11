@@ -79,5 +79,9 @@ function newTodo() {
 		check_button.className = classNames.TODO_CHECKBOX;
 		check_button.id = parseInt(item.TODO_ITEM);
 		
+		//IF delete button is clicked
+		delete_button.onclick = function deleteItem() {
+
+		};
 	});
 };
