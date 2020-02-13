@@ -113,6 +113,12 @@ function newTodo() {
 			for( var j = 0; j < todo_list.length; j++){ 
 				if ( todo_list[j].TODO_ITEM === check_item_id ) {
 					
+					//If the item is unchecked then check it and re-run the add function
+					if ( todo_list[j].TODO_CHECKBOX === 'unchecked' ) {
+						todo_list[j].TODO_CHECKBOX = 'checked';
+						check_flag = "yes";
+						uncheckedCountSpan = uncheckedCountSpan - 1;
+							}
 				}
 			};
 		};
