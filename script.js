@@ -103,6 +103,9 @@ function newTodo() {
 			}
 		};
 
+		// if check button is clicked
+		check_button.onclick = function checkItem() {
+
 		};
 	});
 };
