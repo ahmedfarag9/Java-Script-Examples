@@ -118,7 +118,9 @@ function newTodo() {
 						todo_list[j].TODO_CHECKBOX = 'checked';
 						check_flag = "yes";
 						uncheckedCountSpan = uncheckedCountSpan - 1;
-							}
+						newTodo();
+					}
+					}
 				}
 			};
 		};
