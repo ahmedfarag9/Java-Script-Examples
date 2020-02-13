@@ -120,6 +120,12 @@ function newTodo() {
 						uncheckedCountSpan = uncheckedCountSpan - 1;
 						newTodo();
 					}
+					//else uncheck it and re-run the add function
+					else {
+						todo_list[j].TODO_CHECKBOX = 'unchecked';
+						uncheck_flag = "yes";
+						uncheckedCountSpan = uncheckedCountSpan + 1;
+						newTodo();
 					}
 				}
 			};
