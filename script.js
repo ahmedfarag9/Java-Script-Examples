@@ -106,6 +106,15 @@ function newTodo() {
 		// if check button is clicked
 		check_button.onclick = function checkItem() {
 
+			//Get check/uncheck button id
+			check_item_id = parseInt(check_button.id)
+
+			//Find checked/unchecked item and edit it inside TODO array						
+			for( var j = 0; j < todo_list.length; j++){ 
+				if ( todo_list[j].TODO_ITEM === check_item_id ) {
+					
+				}
+			};
 		};
 	});
 };
