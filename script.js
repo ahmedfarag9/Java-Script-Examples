@@ -89,7 +89,7 @@ function newTodo() {
 			for( var i = 0; i < todo_list.length; i++){ 
 				if ( todo_list[i].TODO_ITEM === delete_item_id ) {
 					itemCountSpan = itemCountSpan - 1;
-					delete_flag = "yes";
+					delete_flag = true;
 
 					//Check wether to edit check/uncheck counter or not
 					if ( todo_list[i].TODO_CHECKBOX === 'unchecked' ) {
@@ -116,14 +116,14 @@ function newTodo() {
 					//If the item is unchecked then check it and re-run the add function
 					if ( todo_list[j].TODO_CHECKBOX === 'unchecked' ) {
 						todo_list[j].TODO_CHECKBOX = 'checked';
-						check_flag = "yes";
+						check_flag = true;
 						uncheckedCountSpan = uncheckedCountSpan - 1;
 						newTodo();
 					}
 					//else uncheck it and re-run the add function
 					else {
 						todo_list[j].TODO_CHECKBOX = 'unchecked';
-						uncheck_flag = "yes";
+						uncheck_flag = true;
 						uncheckedCountSpan = uncheckedCountSpan + 1;
 						newTodo();
 					}
