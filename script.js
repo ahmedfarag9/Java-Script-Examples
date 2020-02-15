@@ -16,15 +16,15 @@ let itemCountSpan = parseInt(document.getElementById('item-count').textContent);
 let uncheckedCountSpan = parseInt(document.getElementById('unchecked-count').textContent);
 
 //flag variables
-let delete_flag = "no";
-let check_flag = "no";
-let uncheck_flag = "no";
+let delete_flag = false;
+let check_flag = false;
+let uncheck_flag = false;
 
 //Function to add a new TODO object
 function newTodo() {
 
 	//If a value is just added to the TODO list
-	if (delete_flag === "no" && check_flag === "no" && uncheck_flag === "no" ) {
+	if (delete_flag === false && check_flag === false && uncheck_flag === false ) {
 
 		//Increment the TODO counters
 		itemCountSpan = itemCountSpan + 1;
@@ -49,9 +49,9 @@ function newTodo() {
 		document.getElementById('unchecked-count').textContent = uncheckedCountSpan;
 
 		//Reset flag variables
-		delete_flag = "no";
-		check_flag = "no";
-		uncheck_flag = "no";
+		delete_flag = false;
+		check_flag = false;
+		uncheck_flag = false;
 	}
 	
 	//Editing the TODO list in the HTML DOM
